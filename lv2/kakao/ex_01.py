@@ -1,37 +1,27 @@
 # 문자열 압축
+
 def cut(s, count):
-    prev = s[:count]
-    pattern = {}
-    result = len(s)
-
-    for i in range(count, len(s)):
-        if i + count > len(s):
-            break
+    result, pattern, prev = len(s), 0, s[:count]
+    
+    for i in range(count, len(s) - count + 1, count):
+        cur = s[i:i + count]
         
-        if prev == s[i:i + count]:
+        # 반복 횟수를 기록
+        if prev == cur:
+            pattern = 2 if pattern == 0 else pattern + 1
 
-            if prev in pattern:
-                pattern[prev] += 1
-            else:
-                pattern[prev] = 2
-            
+        # 줄인 길이 갱신
+        elif pattern > 0:
+            result += len(str(pattern)) - count * (pattern - 1)
+            pattern = 0
         
-        prev = prev[1:] + s[i]
+        prev = cur
     
-    # TODO: 중복제거
-    
-    for p in pattern.values():
-        result += 1
-        result -= count * (p - 1)
-    
-    print(pattern, count, result)
+    if pattern > 0:
+        result += len(str(pattern)) - count * (pattern - 1)
     
     return result
 
 def solution(s):
-    result = len(s)
-    
-    for i in range(len(s) // 2):
-        result = min(result, cut(s, i))
-    
-    return result
+    # s가 1글자일 때 예외처리
+    return min([cut(s, i) for i in range(1, len(s))] + [len(s)])

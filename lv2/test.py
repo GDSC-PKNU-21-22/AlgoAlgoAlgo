@@ -41,3 +41,11 @@ class Test(unittest.TestCase):
         result = 17
         
         self.assertEqual(result, solution(s))
+
+    def test_ex01_06(self):
+        from .kakao.ex_01 import solution
+        
+        s = "a"
+        result = 1
+        
+        self.assertEqual(result, solution(s))
