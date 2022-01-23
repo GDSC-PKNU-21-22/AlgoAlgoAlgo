@@ -39,10 +39,7 @@ def solution(dartResult):
                 score_stack[-2].next_opt = c
             
         else:
-            if end.isdigit():
-                score = 10
-            else:
-                score = int(c)
+            score = 10 if end.isdigit() else int(c)
         
         end = c
             
