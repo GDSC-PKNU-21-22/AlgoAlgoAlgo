@@ -46,7 +46,4 @@ def solution(dartResult):
         
         end = c
             
-    result = 0
-    for s in score_stack:
-        result += s.get_total_score()
-    return result
+    return sum(s.get_total_score() for s in score_stack)
