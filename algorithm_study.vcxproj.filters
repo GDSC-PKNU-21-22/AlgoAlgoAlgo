@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="220130_L1_문자열내림차순으로배치하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="220130_L1_문자열다루기기본.cpp">
+    <ClCompile Include="220130_L1_소수찾기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="220130_L1_서울에서김서방찾기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="220130_L1_소수찾기.cpp">
+    <ClCompile Include="220130_L1_문자열다루기기본.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="220130_L1_문자열내림차순으로배치하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
