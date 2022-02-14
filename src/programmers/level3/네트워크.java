@@ -1,4 +1,4 @@
-package level3;
+package programmers.level3;
 
 public class 네트워크 {
     public static void main(String[] args) {

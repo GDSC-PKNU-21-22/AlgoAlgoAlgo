@@ -1,11 +1,7 @@
-package level1;
+package programmers.level1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.function.Predicate;
-import java.util.stream.IntStream;
 
 public class 같은숫자는싫어 {
     public static void main(String[] args) {

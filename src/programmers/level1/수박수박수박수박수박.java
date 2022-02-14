@@ -1,4 +1,4 @@
-package level1;
+package programmers.level1;
 
 public class 수박수박수박수박수박 {
     public static void main(String[] args) {

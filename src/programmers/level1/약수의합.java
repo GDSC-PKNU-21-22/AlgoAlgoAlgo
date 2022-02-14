@@ -1,4 +1,4 @@
-package level1;
+package programmers.level1;
 
 public class 약수의합 {
     public static void main(String[] args) {

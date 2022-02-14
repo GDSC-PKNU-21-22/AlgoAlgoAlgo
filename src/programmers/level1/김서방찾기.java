@@ -1,4 +1,4 @@
-package level1;
+package programmers.level1;
 
 public class 김서방찾기 {
     class Solution {

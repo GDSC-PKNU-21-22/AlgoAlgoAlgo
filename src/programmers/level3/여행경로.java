@@ -1,4 +1,4 @@
-package level3;
+package programmers.level3;
 
 import java.util.ArrayList;
 import java.util.Arrays;

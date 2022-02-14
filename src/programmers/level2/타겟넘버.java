@@ -1,4 +1,4 @@
-package level2;
+package programmers.level2;
 
 public class 타겟넘버 {
     public static void main(String[] args) {
