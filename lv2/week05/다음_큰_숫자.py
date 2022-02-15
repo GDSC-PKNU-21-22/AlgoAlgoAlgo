@@ -35,3 +35,10 @@ def solution(n):
         answer += converted[pivot + 1:].count('1') * '1'
 
     return reconvert(answer)
+
+################################################################
+def solution(n):
+    one_count = lambda x: bin(x)[2:].count('1')
+    for i in range(n + 1, n * 2 + 1):
+        if one_count(i) == one_count(n):
+            return i
